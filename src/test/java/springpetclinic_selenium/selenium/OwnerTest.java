@@ -51,7 +51,7 @@ public class OwnerTest
      */
     public void testNotFindOwner()
     {
-        driver.get(config.getPetClinicUrl()+"/owners/find.html");
+        driver.get(config.getPetClinicUrl()+"owners/find.html");
         System.out.println(config.getPetClinicUrl()+"/owners/find.html");
         driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys(config.getOwnerLastNameNotExist());
         driver.findElement(By.xpath("//*[@id='search-owner-form']/fieldset/div[2]/button")).submit();
